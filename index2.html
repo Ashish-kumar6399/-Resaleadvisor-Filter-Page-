@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 2</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <div class="container">
+
+    <div class="head  select d-flex flex-wrap justify-content-between align-items-center p-2  ">
+        <i class="cross fa-solid fa-xmark pt-2 text-black-50" aria-label="Close" style="font-size: 1rem; cursor: pointer;"></i>
+        <h5 class="text-left mb-0 mt-2 mt-md-0 flex-grow-1 text-center text-black-50  ms-5  ">Select Filters</h5>
+        <button class="btn btn-outline-secondary reset-btn mt-2 mt-md-0  rounded-pill" style="padding-top: 0px; padding-bottom: 0px;">Reset</button>
+    </div>
+
+</div>
+
+    <!-- Filter list
+     ============================================= -->
+    <div class="list d-flex">
+        <div id="scrollable-section" class="filter-list">
+            <ul class="list-group overflow-auto" style="max-height: 503px;">
+                <li class="list-group-item"  id="list_new_item">Buy / Rent</li>
+                <li class="list-group-item" id="list_new_item">Area</li>
+                <li class="list-group-item" id="list_new_item">Bedroom</li>
+                <li class="list-group-item" id="list_new_item">Residental Property Type</li>
+                <li class="list-group-item" id="list_new_item">Commercial  Property Type</li>
+                <li class="list-group-item" id="list_new_item">Locality</li>
+                <li class="list-group-item" id="list_new_item">Project /Society</li>
+                <li class="list-group-item" id="list_new_item">Listed By</li>
+                
+            </ul>
+        </div>
+
+        <!-- Filter Content
+         ============================================= -->
+
+         <div class="filter-section p-3  border rounded" style="max-height: 536px; overflow-y: auto; -ms-overflow-style: none; scrollbar-width: none;">
+           
+           
+                        <p class="location_para">I'M LOOKING TO</p>
+
+                        <div class="Buy_rent_main  rounded-pill  ">
+                            <div class="Buy_rent_inner rounded-pill  ">
+                                <h6 style="font-size: 14px;">BUY</h6>
+                            </div>
+
+
+
+                            <div class="">
+                                <h6>Rent</h6>
+                            </div>
+
+                        </div>
+                        <hr>
+
+                        <p class="location_para">LOCATION ( City,locality,Project)</p>
+
+                       <div class="search_div rounded-pill">
+                            <p><i class="fa-solid fa-magnifying-glass-location"></i> Pick Location
+                                
+                            </p/>
+                           
+                        </div>
+
+                        <hr>
+
+
+                        <div class="pb-2">Bedroom</div>
+                        <div class="Bhk_main_div">
+                            <div class="rounded text-center"><h6 >1 RK</h6></div>
+                            <div class="rounded text-center"><h6>1 BHK</h6></div>
+                            <div class="rounded text-center"><h6>2 BHK</h6></div>
+                            <div class="rounded text-center"><h6>3 BHK</h6></div>
+                            <div class="rounded text-center"><h6>4 BHK</h6></div>
+                            <div class="rounded text-center"><h6>5 BHK</h6></div>
+                            <div class="rounded text-center"><h6>6 BHK</h6></div>
+                            <div class="rounded text-center"><h6>7 BHK</h6></div>
+                            <div class="rounded text-center"><h6>8 BHK</h6></div>
+                            <div class="rounded text-center"><h6>9 BHK</h6></div>
+
+
+
+                        </div>
+
+
+                        <hr/>
+
+
+
+                        <div class="filter-group mb-4">
+                            <label class="form-label fw-bold">Budget</label>
+                            <div class="range-slider">
+                                <input type="range" min="0" max="5000" step="50" class="form-range text-danger">
+                                <span class="d-block mt-2">0 - 5,00,000</span>
+                            </div>
+                        </div>
+
+
+                        <hr/>
+
+
+
+
+
+
+
+                        <div class="pb-2">SELLER RATINGS</div>
+
+                   
+
+                          <input type="radio" id="All" name="fav_language" value="All">
+                          <label for="All">All</label><br>
+                          <input type="radio" id="Rated 4+" name="fav_language" value="Rated 4+">
+                          <label for="Rated 4+">Rated 4+</label><br>
+                          <input type="radio" id="Rated 3+" name="fav_language" value="Rated 3+">
+                          <label for="Rated 3+">Rated 3+</label><br>
+
+
+                        <hr>
+
+
+
+                        <div class="filter-group mb-4">
+                            <label class="form-label fw-bold text-uppercase" id="Residental_proprty"> RESIDENTAL Property Type</label>
+                            <div class="checkbox-group  gap-3" id="property_type">
+                                <label><input type="checkbox">        Flat/Apartment</label><br>
+                                <label><input type="checkbox"> Independent Villa</label> <br>
+                                <label><input type="checkbox"> Independent House</label> <br>
+                                <label><input type="checkbox"> Independent Floor</label> <br>
+                                <label><input type="checkbox"> Builder Floor</label> <br>
+                                <label><input type="checkbox"> Residental Plot/Land</label><br>
+                                <label><input type="checkbox"> Farm House</label><br>
+                                <label><input type="checkbox"> Studio Apartment</label>
+                                <label><input type="checkbox"> Serviced Apartment</label>
+                                <label><input type="checkbox"> Penthouse</label>
+                                <label><input type="checkbox"> Agriculture Land</label>
+                            </div>
+                        </div>
+
+
+                        <hr>
+
+                        
+                        <div class="filter-group mb-4">
+                            <label class="form-label fw-bold text-uppercase" id="Residental_proprty">Commercial Property Type</label>
+                            <div class="checkbox-group  gap-3" id="property_type">
+                                <label><input type="checkbox"> Office Space</label><br>
+                                <label><input type="checkbox"> Shop/Showroom</label> <br>
+                                <label><input type="checkbox"> Office Space</label> <br>
+                                <label><input type="checkbox"> Studio Apartment</label> <br>
+                                <label><input type="checkbox"> Serviced Apartment</label> <br>
+                                <label><input type="checkbox"> Commercial Land</label> <br>
+                                <label><input type="checkbox"> Industrial Plot/Land</label><br>
+                                <label><input type="checkbox"> Hotel/Resort</label><br>
+                                <label><input type="checkbox"> Guest House</label><br>
+                                <label><input type="checkbox"> Banquet Hall</label><br>
+                                <label><input type="checkbox"> Ware House</label><br>
+                                <label><input type="checkbox"> Godown</label><br>
+                                <label><input type="checkbox"> Industrial Building</label>
+                                <label><input type="checkbox"> Industrial Shed</label>
+                            </div>
+                        </div>
+
+                        <hr>
+
+
+                        
+                        <div class="filter-group mb-4">
+                            <label class="form-label fw-bold text-uppercase" id="Residental_proprty">Listed By</label>
+                            <div class="checkbox-group  gap-3" id="property_type">
+                                <label><input type="checkbox"> Builder</label> <br>
+                                <label><input type="checkbox"> Owner</label> <br>
+                               
+                            </div>
+                        </div>
+
+
+                        <hr>
+
+
+
+
+
+
+
+
+           
+            <div class="filter-content" >
+               
+        
+                <!-- Bathroom -->
+                <div class="filter-group mb-4">
+                    <label class="form-label fw-bold">Bathroom</label>
+                    <div class="radio-group  flex-wrap gap-3">
+                        <label><input type="radio" id="radio_circle" name="bathroom"> 1+</label>
+                        <label><input type="radio" id="radio_circle" name="bathroom"> 2+</label>
+                        <label><input type="radio" id="radio_circle" name="bathroom"> 3+</label>
+                        <label><input type="radio"id="radio_circle" name="bathroom"> Any</label>
+                    </div>
+                </div>
+
+                <hr>
+
+                
+        
+                <!-- Furnishing Status -->
+                <div class="filter-group mb-4">
+                    <label class="form-label fw-bold"  >Furnishing Status</label>
+                    <div class="checkbox-group d-flex flex-wrap gap-3"  id="property_type">
+                        <label><input type="checkbox"> Unfurnished</label>
+                        <label><input type="checkbox"> Semi-furnished</label>
+                        <label><input type="checkbox"> Fully Furnished</label>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="filter-group mb-4">
+                    <label class="form-label fw-bold">Area</label>
+                    <div class="range-slider">
+                        <input type="range" min="0" max="5000" step="50" class="form-range text-danger">
+                        <span class="d-block mt-2">0 - 30,000 sqft</span>
+                    </div>
+                </div>
+
+
+                <hr/>
+
+               
+        
+                <!-- Area -->
+               
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Filter Content END
+     ============================================== -->
+
+    <!-- Footer
+      ============================================== -->
+    <div class="footer d-flex justify-content-between fixed-bottom">
+        <div class="apply-button text-center mt-2 mx-2  mt-3">
+           <p>11286 Properties</p>
+        </div>
+        <!-- Apply Button -->
+        <div class="apply-button text-center mt-2 mx-2">
+            <button class="btn   rounded-pill mb-2 mt-1" style="background-color: #e81c28; color: white; font-size: 14px;">Apply Filters</button>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Handle click events on list-group items
+            document.querySelectorAll('.list-group-item').forEach(function (item) {
+                item.addEventListener('click', function () {
+                    // Remove 'active' class from all items
+                    document.querySelectorAll('.list-group-item').forEach(function (i) {
+                        i.classList.remove('active');
+                    });
+                    // Add 'active' class to the clicked item
+                    item.classList.add('active');
+
+                    // Hide all filter content
+                    document.querySelectorAll('.filter-content').forEach(function (content) {
+                        content.classList.remove('active');
+                    });
+
+                    // Show the corresponding filter content
+                    const filterToShow = document.getElementById(item.getAttribute('data-filter'));
+                    if (filterToShow) {
+                        filterToShow.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
